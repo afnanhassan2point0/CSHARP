@@ -1,19 +1,13 @@
-﻿using System;
+﻿Console.Write("Enter the base value : ");
+int baseInput = Convert.ToInt32(Console.ReadLine());
+Console.Write("Enter the power factor : ");
+int powerInput = Convert.ToInt32(Console.ReadLine());
+decimal powerValue = findPower(baseInput, powerInput); // i.e 10^10
+Console.Write(powerValue);
 
-namespace Language;
-
-class RecursivePower
+static decimal findPower(int baseValue, int powerFactor)
 {
-    static void Main()
-    {
-        int x = findPower(2, 3);
-        Console.Write(x);
-
-        static int findPower(int baseValue, int powerFactor)
-        {
-            if (powerFactor == 0)
-                return 1;
-            return baseValue * findPower(baseValue, powerFactor - 1);
-        }
-    }
+    if (powerFactor == 0)
+        return 1;
+    return baseValue * findPower(baseValue, powerFactor - 1);
 }
