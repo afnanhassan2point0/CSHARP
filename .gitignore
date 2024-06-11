@@ -175,3 +175,17 @@ EvenOddChecker/obj/Debug/EvenOddChecker.pdb
 EvenOddChecker/obj/Release/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
 EvenOddChecker/obj/Release/EvenOddChecker.csproj.AssemblyReference.cache
 EvenOddChecker/Properties/AssemblyInfo.cs
+BasicCliCalculator/obj/project.packagespec.json
+BasicCliCalculator/obj/rider.project.restore.info
+FibonacciSeries/obj/project.packagespec.json
+FibonacciSeries/obj/rider.project.restore.info
+FindPowerByRecursion/obj/project.packagespec.json
+FindPowerByRecursion/obj/rider.project.restore.info
+PrimeCompositPrinter/obj/project.packagespec.json
+PrimeCompositPrinter/obj/rider.project.restore.info
+StringManipulations/obj/project.packagespec.json
+StringManipulations/obj/rider.project.restore.info
+StudentsDatabase/obj/project.packagespec.json
+StudentsDatabase/obj/rider.project.restore.info
+VowelsCounter/obj/project.packagespec.json
+VowelsCounter/obj/rider.project.restore.info
