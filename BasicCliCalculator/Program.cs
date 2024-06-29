@@ -167,23 +167,23 @@ void PrintPatterns()
             PrintPatterns();
             break;
         case "6":
-            // PrintCrossPatterns();
+            PrintCrossPatterns();
             PrintPatterns();
             break;
         case "7":
-            // PrintAlphabetTriangles();
+            PrintAlphabetTriangles();
             PrintPatterns();
             break;
         case "8":
-            // PrintHollowShapes();
+            PrintHollowShapes();
             PrintPatterns();
             break;
         case "9":
-            // PrintLeftCounting();
+            PrintLeftCounting();
             PrintPatterns();
             break;
         case "10":
-            // PrintRightAlphabets();
+            PrintRightAlphabets();
             PrintPatterns();
             break;
         case "11":
@@ -318,7 +318,7 @@ void PrintLowerTriangles()
     Console.WriteLine("\nLower Right Triangle\n\n");
 }
 
-void PrintBirdsRow()
+void PrintBirdsRow() // almost same pattern is done with another method in PrintCrossPatterns()
 {
     Console.Write("\nEnter height : ");
     int height = Convert.ToInt32(Console.ReadLine());
@@ -352,4 +352,172 @@ void PrintBirdsRow()
         Console.Write('\n');
     }
 }
+
+void PrintCrossPatterns() // almost same pattern is done with another method in PrintBirdsRow()
+{
+    Console.Write("\nEnter Height of Cross : ");
+    int height = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Enter filling character : ");
+    char ch = Convert.ToChar(Console.ReadLine());
+    // upper half cross
+    for (int i = 0; i < height; i++)
+    {
+        for (int s = 0; s < i; s++)
+            Console.Write(' ');
+        for (int j = 2 * height; j > (2 * i + 1); j--)
+        {
+            if (j == 2 * height || j == (2 * i + 2))
+                Console.Write(ch);
+            else Console.Write(' ');
+        }
+        Console.WriteLine();
+    }
+    // lower half cross
+    for (int i = 1; i < height; i++)
+    {
+        for (int s = height - 1; s > i; s--)
+            Console.Write(' ');
+        for (int j = 0; j < (2 * i + 1); j++)
+        {
+            if (j == 0 || j == 2 * i)
+                Console.Write(ch);
+            else Console.Write(' ');
+        }
+        Console.WriteLine();
+    }
+}
+
+void PrintAlphabetTriangles()
+{
+    Console.WriteLine("\nShape # 01\n");
+    char ch = 'A';
+    // 1st triangle
+    for (int i = 0; i < 7; i++)
+    {
+        for (int j = -1; j < i; j++)
+        {
+            Console.Write($"{ch} ");
+            ch++;
+        }
+        Console.WriteLine();
+    }
+    // 2nd triangle
+    Console.WriteLine("\nShape # 02\n");
+    for (int i = 0; i < 26; i++)
+    {
+        ch = 'A';
+        for (int j = 0; j <= i; j++)
+        {
+            Console.Write($"{ch} ");
+            ch++;
+        }
+        Console.WriteLine();
+    }
+}
+
+void PrintHollowShapes()
+{
+    Console.Write("\nEnter height : ");
+    int height = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Enter character : ");
+    char ch = Convert.ToChar(Console.ReadLine());
+    Console.WriteLine("\n---> Hollow Square\n");
+    for (int i = 0; i < height; i++)
+    {
+        for (int j = 0; j < height; j++)
+        {
+            if (i == 0 || i == height - 1 || j == 0 || j == height - 1)
+                Console.Write($"{ch} ");
+            else Console.Write("  ");
+        }
+        Console.WriteLine();
+    }
+    Console.WriteLine("\n---> Hollow Parallelogram\n");
+    for (int i = 0; i < 2 * height; i++)
+    {
+        for (int j = 0; j < height; j++)
+        {
+            if (i == 0 || i == 2 * height - 1 || j == 0 || j == height - 1)
+                Console.Write($"{ch} ");
+            else Console.Write("  ");
+        }
+        Console.WriteLine();
+    }
+    Console.WriteLine("\n---> Hollow Parallelogram\n");
+    for (int i = 0; i < height; i++)
+    {
+        for (int j = 0; j < 2 * height; j++)
+        {
+            if (i == 0 || i == height - 1 || j == 0 || j == 2 * height - 1)
+                Console.Write($"{ch} ");
+            else Console.Write("  ");
+        }
+        Console.WriteLine();
+    }
+    Console.WriteLine("\n---> Hollow Square\n");
+    for (int i = 0; i < height; i++)
+    {
+        for (int s = i; s < height - 1; s++)
+            Console.Write("  ");
+        for (int j = 0; j <= 2 * i; j++)
+        {
+            if (j == 0 || j == 2 * i)
+                Console.Write($"{ch} ");
+            else Console.Write("  ");
+        }
+        Console.WriteLine();
+    }
+    for (int i = height - 1; i > 0; i--)
+    {
+        for (int s = i; s < height; s++)
+            Console.Write("  ");
+        for (int j = 1; j < 2 * i; j++)
+        {
+            if (j == 1 || j == (2 * i - 1))
+                Console.Write($"{ch} ");
+            else Console.Write("  ");
+        }
+        Console.WriteLine();
+    }
+}
+
+void PrintLeftCounting()
+{
+    Console.Write("\nEnter height : ");
+    int h = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("\n---> Columnar Counting\n");
+    for (int i = 1; i <= h; i++)
+    {
+        for (int j = 0; j < i; j++)
+            Console.Write($"{i}  ");
+        Console.WriteLine();
+    }
+    Console.WriteLine("\n---> Row-wise Counting\n");
+    for (int i = 0; i < h; i++)
+    {
+        for (int j = 0; j < i + 1; j++)
+            Console.Write($"{j + 1}  ");
+        Console.WriteLine();
+    }
+    Console.WriteLine("\n---> Continuous Counting\n");
+    int n = 1;
+    for (int i = 0; i < h; i++)
+    {
+        for (int j = 0; j < i + 1; j++)
+        {
+            if (n < 10)
+                Console.Write($"{n}   ");
+            else
+                Console.Write($"{n}  ");
+            n++;
+        }
+        Console.WriteLine();
+    }
+}
+
+void PrintRightAlphabets()
+{
+}
+
+
 
