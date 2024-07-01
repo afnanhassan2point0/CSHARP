@@ -140,7 +140,7 @@ void PrintTable()
 
 void PrintPatterns()
 {
-    Console.Write("\n0.  Exit Program \n1.  Square \n2.  Parallelogram \n3.  Upper Triangle \n4.  Lower Triangle \n5.  Bird Row \n6.  Cross Pattern \n7.  Alphabets Triangles \n8.  Hollow Shapes \n9.  Left Counting \n10. Right Alphabets \n11. ABC & Counting \n12. Plus Sign \n~   Enter choice here : ");
+    Console.Write("\n0.  Exit Program \n1.  Square \n2.  Parallelogram \n3.  Upper Triangle \n4.  Lower Triangle \n5.  Bird Row \n6.  Cross Pattern \n7.  Alphabets Triangles \n8.  Hollow Shapes \n9.  Left Counting \n10. Right Alphabets \n11. ABC & Counting \n~   Enter choice here : ");
     string? choice = Console.ReadLine(); // I used string? just for testing & fun purpose as an alternative to char/int data types
     switch (choice)
     {
@@ -190,10 +190,6 @@ void PrintPatterns()
             PrintABCandCounting();
             PrintPatterns();
             break;
-        case "12":
-            PrintPlusSign();
-            PrintPatterns();
-            break;
         default:
             Console.WriteLine("\nerror: invalid input\n");
             PrintPatterns();
@@ -208,7 +204,8 @@ void PrintSquarePatterns()
     Console.Write("\nEnter Height of the Square : ");
     int height = Convert.ToInt32(Console.ReadLine());
     Console.Write("Enter the Character to be Printed : ");
-    char character = Convert.ToChar(Console.ReadLine());
+    char character = Console.ReadKey().KeyChar;
+    Console.WriteLine();
 
     for (int i = 0; i < height; i++)
     {
@@ -226,7 +223,8 @@ void PrintParallelograms()
     Console.Write("Enter width of Parallelogram : ");
     int width = Convert.ToInt32(Console.ReadLine());
     Console.Write("Enter character to be printed : ");
-    char character = Convert.ToChar(Console.ReadLine());
+    char character = Console.ReadKey().KeyChar;
+    Console.WriteLine();
 
     for (int h = 0; h < height; h++)
     {
@@ -242,7 +240,8 @@ void PrintUpperTriangles()
     Console.Write("\nEnter height : ");
     int height = Convert.ToInt32((Console.ReadLine()));
     Console.Write("Enter character : ");
-    char ch = Convert.ToChar(Console.ReadLine());
+    char ch = Console.ReadKey().KeyChar;
+    Console.WriteLine();
     Console.Write("\n\n");
     for (int i = 0; i < height; i++)
     {
@@ -276,7 +275,8 @@ void PrintLowerTriangles()
     Console.Write("\nEnter height : ");
     int height = Convert.ToInt32(Console.ReadLine());
     Console.Write("Enter character : ");
-    char ch = Convert.ToChar(Console.ReadLine());
+    char ch = Console.ReadKey().KeyChar;
+    Console.WriteLine();
 
     Console.Write("\n\n");
     for (int i = 0; i < height; i++)
@@ -311,7 +311,8 @@ void PrintBirdsRow() // almost same pattern is done with another method in Print
     Console.Write("\nEnter height : ");
     int height = Convert.ToInt32(Console.ReadLine());
     Console.Write("Enter character : ");
-    char ch = Convert.ToChar(Console.ReadLine());
+    char ch = Console.ReadKey().KeyChar;
+    Console.WriteLine();
 
     Console.WriteLine("\nview # 01\n");
     for (int i = height; i > -1; i--)
@@ -346,7 +347,8 @@ void PrintCrossPatterns() // almost same pattern is done with another method in 
     Console.Write("\nEnter Height of Cross : ");
     int height = Convert.ToInt32(Console.ReadLine());
     Console.Write("Enter filling character : ");
-    char ch = Convert.ToChar(Console.ReadLine());
+    char ch = Console.ReadKey().KeyChar;
+    Console.WriteLine();
     // upper half cross
     for (int i = 0; i < height; i++)
     {
@@ -408,7 +410,8 @@ void PrintHollowShapes()
     Console.Write("\nEnter height : ");
     int height = Convert.ToInt32(Console.ReadLine());
     Console.Write("Enter character : ");
-    char ch = Convert.ToChar(Console.ReadLine());
+    char ch = Console.ReadKey().KeyChar;
+    Console.WriteLine();
     Console.WriteLine("\n---> Hollow Square\n");
     for (int i = 0; i < height; i++)
     {
@@ -573,7 +576,5 @@ void PrintABCandCounting()
     }
 }
 
-void PrintPlusSign()
-{
-}
 
+// removed a couple of other ideas just to keep it a Mini Project
