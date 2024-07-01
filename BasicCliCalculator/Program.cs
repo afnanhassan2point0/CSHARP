@@ -140,7 +140,7 @@ void PrintTable()
 
 void PrintPatterns()
 {
-    Console.Write("\n0.  Exit Program \n1.  Square \n2.  Parallelogram \n3.  Upper Triangle \n4.  Lower Triangle \n5.  Bird Row \n6.  Cross Pattern \n7.  Alphabets Triangles \n8.  Hollow Shapes \n9.  Left Counting \n10. Right Alphabets \n11. Up Right Triangle \n12. Up Left Triangle \n13. ABC & Counting \n14. Gap Counting \n15. Plus Sign \n~   Enter choice here : ");
+    Console.Write("\n0.  Exit Program \n1.  Square \n2.  Parallelogram \n3.  Upper Triangle \n4.  Lower Triangle \n5.  Bird Row \n6.  Cross Pattern \n7.  Alphabets Triangles \n8.  Hollow Shapes \n9.  Left Counting \n10. Right Alphabets \n11. ABC & Counting \n12. Plus Sign \n~   Enter choice here : ");
     string? choice = Console.ReadLine(); // I used string? just for testing & fun purpose as an alternative to char/int data types
     switch (choice)
     {
@@ -187,23 +187,11 @@ void PrintPatterns()
             PrintPatterns();
             break;
         case "11":
-            // PrintUpRightTriangle();
+            PrintABCandCounting();
             PrintPatterns();
             break;
         case "12":
-            // PrintUpLeftTriangle();
-            PrintPatterns();
-            break;
-        case "13":
-            // PrintABCandCounting();
-            PrintPatterns();
-            break;
-        case "14":
-            // PrintGapCounting();
-            PrintPatterns();
-            break;
-        case "15":
-            // PrintPlusSign();
+            PrintPlusSign();
             PrintPatterns();
             break;
         default:
@@ -517,7 +505,75 @@ void PrintLeftCounting()
 
 void PrintRightAlphabets()
 {
+    Console.Write("\nEnter height : ");
+    int h = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("\nRow-wise Alphabets\n");
+    char ch;
+    for (int i = 0; i < h; i++)
+    {
+        ch = 'A';
+        for (int s = i; s < h - 1; s++)
+            Console.Write("  ");
+        for (int j = 0; j <= i; j++)
+        {
+            Console.Write($"{ch} ");
+            ch++;
+        }
+        Console.WriteLine();
+    }
+    Console.WriteLine("\nContinuous Alphabets\n");
+    char rCh = 'A';
+    for (int i = 0; i < h; i++)
+    {
+        ch = rCh;
+        for (int s = i; s < h - 1; s++)
+            Console.Write("  ");
+        for (int j = 0; j <= i; j++)
+        {
+            Console.Write($"{ch} ");
+            ch--;
+        }
+        rCh++;
+        Console.WriteLine();
+    }
 }
 
+void PrintABCandCounting()
+{
+    Console.Write("\nEnter height : ");
+    int h = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine();
+    for (int i = 0; i < h; i++)
+    {
+        for (int j = 0; j <= h; j++)
+        {
+            if ((i * j) < 10)
+                Console.Write($"{i * j}    ");
+            else if ((i * j) < 100)
+                Console.Write($"{i * j}   ");
+            else
+                Console.Write($"{i * j}  ");
+        }
+        Console.WriteLine();
+    }
+    Console.WriteLine("\nAlphabets\n");
+    char ch = 'A';
+    char rCh = 'Z';
+    for (int i = 0; i < h; i++)
+    {
+        if (ch > rCh)
+            ch = 'a';
+        for (int j = 0; j < h; j++)
+        {
+            Console.Write($"{ch}   ");
+            ch++;
+        }
+        rCh = 'z';
+        Console.WriteLine();
+    }
+}
 
+void PrintPlusSign()
+{
+}
 
