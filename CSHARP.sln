@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecimalAndBinaryConversion"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternsPrinting", "PatternsPrinting\PatternsPrinting.csproj", "{28A2F99D-E4C6-4268-8893-33C9B0D2DEAE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxAndMinFinder", "MaxAndMinFinder\MaxAndMinFinder.csproj", "{CD5A0E6B-5A26-4335-B384-1883C7DF9D19}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{28A2F99D-E4C6-4268-8893-33C9B0D2DEAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28A2F99D-E4C6-4268-8893-33C9B0D2DEAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28A2F99D-E4C6-4268-8893-33C9B0D2DEAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD5A0E6B-5A26-4335-B384-1883C7DF9D19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD5A0E6B-5A26-4335-B384-1883C7DF9D19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD5A0E6B-5A26-4335-B384-1883C7DF9D19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD5A0E6B-5A26-4335-B384-1883C7DF9D19}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
