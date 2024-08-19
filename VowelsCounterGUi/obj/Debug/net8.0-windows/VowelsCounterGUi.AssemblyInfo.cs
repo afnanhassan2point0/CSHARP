@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("VowelsCounterGUi")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("vowelscountergui")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c39adb5c1837af24c412b98d122dc66d56c66267")]
-[assembly: System.Reflection.AssemblyProductAttribute("VowelsCounterGUi")]
-[assembly: System.Reflection.AssemblyTitleAttribute("VowelsCounterGUi")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f7fabbe4901e8306666920c64d08b8301d99c9a6")]
+[assembly: System.Reflection.AssemblyProductAttribute("vowelscountergui")]
+[assembly: System.Reflection.AssemblyTitleAttribute("vowelscountergui")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")]
 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")]

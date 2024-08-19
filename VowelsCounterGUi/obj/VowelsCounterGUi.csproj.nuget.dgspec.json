@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Coding-Afnanirshad\\CSHARP\\VowelsCounterGUi\\VowelsCounterGUi.csproj": {}
+    "D:\\Coding-Afnanirshad\\CSHARP\\VowelsCounterGUi\\vowelscountergui.csproj": {}
   },
   "projects": {
-    "D:\\Coding-Afnanirshad\\CSHARP\\VowelsCounterGUi\\VowelsCounterGUi.csproj": {
+    "D:\\Coding-Afnanirshad\\CSHARP\\VowelsCounterGUi\\vowelscountergui.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Coding-Afnanirshad\\CSHARP\\VowelsCounterGUi\\VowelsCounterGUi.csproj",
-        "projectName": "VowelsCounterGUi",
-        "projectPath": "D:\\Coding-Afnanirshad\\CSHARP\\VowelsCounterGUi\\VowelsCounterGUi.csproj",
+        "projectUniqueName": "D:\\Coding-Afnanirshad\\CSHARP\\VowelsCounterGUi\\vowelscountergui.csproj",
+        "projectName": "vowelscountergui",
+        "projectPath": "D:\\Coding-Afnanirshad\\CSHARP\\VowelsCounterGUi\\vowelscountergui.csproj",
         "packagesPath": "C:\\Users\\afnan\\.nuget\\packages\\",
         "outputPath": "D:\\Coding-Afnanirshad\\CSHARP\\VowelsCounterGUi\\obj\\",
         "projectStyle": "PackageReference",

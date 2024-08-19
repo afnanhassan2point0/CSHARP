@@ -1,6 +1,6 @@
-﻿namespace VowelsCounterGUi;
+﻿namespace vowelscountergui;
 
-partial class VowelsCounter
+partial class Form1
 {
     /// <summary>
     ///  Required designer variable.
@@ -31,7 +31,7 @@ partial class VowelsCounter
         this.components = new System.ComponentModel.Container();
         this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         this.ClientSize = new System.Drawing.Size(800, 450);
-        this.Text = "Vowels Counter 🔥";
+        this.Text = "Form1";
     }
 
     #endregion
