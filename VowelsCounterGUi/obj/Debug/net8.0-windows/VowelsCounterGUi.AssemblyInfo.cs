@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("vowelscountergui")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f7fabbe4901e8306666920c64d08b8301d99c9a6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb32093d787985c1a896f3c10b70b75de69312a4")]
 [assembly: System.Reflection.AssemblyProductAttribute("vowelscountergui")]
 [assembly: System.Reflection.AssemblyTitleAttribute("vowelscountergui")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
