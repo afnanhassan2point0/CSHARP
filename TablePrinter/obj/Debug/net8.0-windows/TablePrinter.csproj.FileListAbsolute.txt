@@ -1,0 +1,15 @@
+D:\Coding-Afnanirshad\CSHARP\TablePrinter\bin\Debug\net8.0-windows\TablePrinter.exe
+D:\Coding-Afnanirshad\CSHARP\TablePrinter\bin\Debug\net8.0-windows\TablePrinter.deps.json
+D:\Coding-Afnanirshad\CSHARP\TablePrinter\bin\Debug\net8.0-windows\TablePrinter.runtimeconfig.json
+D:\Coding-Afnanirshad\CSHARP\TablePrinter\bin\Debug\net8.0-windows\TablePrinter.dll
+D:\Coding-Afnanirshad\CSHARP\TablePrinter\bin\Debug\net8.0-windows\TablePrinter.pdb
+D:\Coding-Afnanirshad\CSHARP\TablePrinter\obj\Debug\net8.0-windows\TablePrinter.GeneratedMSBuildEditorConfig.editorconfig
+D:\Coding-Afnanirshad\CSHARP\TablePrinter\obj\Debug\net8.0-windows\TablePrinter.AssemblyInfoInputs.cache
+D:\Coding-Afnanirshad\CSHARP\TablePrinter\obj\Debug\net8.0-windows\TablePrinter.AssemblyInfo.cs
+D:\Coding-Afnanirshad\CSHARP\TablePrinter\obj\Debug\net8.0-windows\TablePrinter.csproj.CoreCompileInputs.cache
+D:\Coding-Afnanirshad\CSHARP\TablePrinter\obj\Debug\net8.0-windows\TablePrinter.sourcelink.json
+D:\Coding-Afnanirshad\CSHARP\TablePrinter\obj\Debug\net8.0-windows\TablePrinter.dll
+D:\Coding-Afnanirshad\CSHARP\TablePrinter\obj\Debug\net8.0-windows\refint\TablePrinter.dll
+D:\Coding-Afnanirshad\CSHARP\TablePrinter\obj\Debug\net8.0-windows\TablePrinter.pdb
+D:\Coding-Afnanirshad\CSHARP\TablePrinter\obj\Debug\net8.0-windows\TablePrinter.genruntimeconfig.cache
+D:\Coding-Afnanirshad\CSHARP\TablePrinter\obj\Debug\net8.0-windows\ref\TablePrinter.dll
