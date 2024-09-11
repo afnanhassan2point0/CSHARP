@@ -1,0 +1,15 @@
+D:\Coding-Afnanirshad\CSHARP\ClassManagement\bin\Debug\net8.0-windows\ClassManagement.exe
+D:\Coding-Afnanirshad\CSHARP\ClassManagement\bin\Debug\net8.0-windows\ClassManagement.deps.json
+D:\Coding-Afnanirshad\CSHARP\ClassManagement\bin\Debug\net8.0-windows\ClassManagement.runtimeconfig.json
+D:\Coding-Afnanirshad\CSHARP\ClassManagement\bin\Debug\net8.0-windows\ClassManagement.dll
+D:\Coding-Afnanirshad\CSHARP\ClassManagement\bin\Debug\net8.0-windows\ClassManagement.pdb
+D:\Coding-Afnanirshad\CSHARP\ClassManagement\obj\Debug\net8.0-windows\ClassManagement.GeneratedMSBuildEditorConfig.editorconfig
+D:\Coding-Afnanirshad\CSHARP\ClassManagement\obj\Debug\net8.0-windows\ClassManagement.AssemblyInfoInputs.cache
+D:\Coding-Afnanirshad\CSHARP\ClassManagement\obj\Debug\net8.0-windows\ClassManagement.AssemblyInfo.cs
+D:\Coding-Afnanirshad\CSHARP\ClassManagement\obj\Debug\net8.0-windows\ClassManagement.csproj.CoreCompileInputs.cache
+D:\Coding-Afnanirshad\CSHARP\ClassManagement\obj\Debug\net8.0-windows\ClassManagement.sourcelink.json
+D:\Coding-Afnanirshad\CSHARP\ClassManagement\obj\Debug\net8.0-windows\ClassManagement.dll
+D:\Coding-Afnanirshad\CSHARP\ClassManagement\obj\Debug\net8.0-windows\refint\ClassManagement.dll
+D:\Coding-Afnanirshad\CSHARP\ClassManagement\obj\Debug\net8.0-windows\ClassManagement.pdb
+D:\Coding-Afnanirshad\CSHARP\ClassManagement\obj\Debug\net8.0-windows\ClassManagement.genruntimeconfig.cache
+D:\Coding-Afnanirshad\CSHARP\ClassManagement\obj\Debug\net8.0-windows\ref\ClassManagement.dll

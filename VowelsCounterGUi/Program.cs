@@ -1,4 +1,4 @@
-namespace vowelscountergui;
+namespace VowelsCounterGUi;
 
 static class Program
 {

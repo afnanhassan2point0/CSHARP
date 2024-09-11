@@ -1,5 +1,6 @@
 {
     "cSpell.words": [
         "Argb"
-    ]
+    ],
+    "csharp.preview.improvedLaunchExperience": true
 }
