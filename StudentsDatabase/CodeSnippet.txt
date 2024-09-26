@@ -1,0 +1,25 @@
+ApplicationConfiguration.Initialize();
+Form sdb_main_form = new()
+{
+    MinimumSize = new Size(400, 600),
+    ForeColor = Color.White,
+    BackColor = Color.DarkSlateGray,
+};
+
+//* Main page | Home Page
+Label rollNo_label = new()
+{
+    Width = 150,
+    Text = "Enter roll number : ",
+    Location = new Point(10, 10),
+};
+TextBox rollNo_textBox = new()
+{
+    Location = new Point(200, 10),
+    TextAlign = TextAlign.Center,
+};
+
+//* Action | installation
+sdb_main_form.Controls.Add(rollNo_label);
+sdb_main_form.Controls.Add(rollNo_textBox);
+Application.Run(sdb_main_form);

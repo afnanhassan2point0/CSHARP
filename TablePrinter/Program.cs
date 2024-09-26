@@ -34,12 +34,10 @@ Button submitButton = new()
 
 //? Action Goes here
 
-
 //? loading the window
 tableContainer.Controls.Add(userInputLabel);
 tableContainer.Controls.Add(userInputBox);
 tableContainer.Controls.Add(submitButton);
 Application.Run(tableContainer);
-
 
 //* user defined methods

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TablePrinter")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a2e6148e059c7d8dbddfdb799e3755301347278b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6006890e9a502c0fb7fea0f0d0d3ef4616c74253")]
 [assembly: System.Reflection.AssemblyProductAttribute("TablePrinter")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TablePrinter")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
