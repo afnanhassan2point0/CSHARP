@@ -1,0 +1,15 @@
+D:\Coding-Afnanirshad\CSHARP\ToDoApplication\bin\Debug\net8.0-windows\ToDoApplication.exe
+D:\Coding-Afnanirshad\CSHARP\ToDoApplication\bin\Debug\net8.0-windows\ToDoApplication.deps.json
+D:\Coding-Afnanirshad\CSHARP\ToDoApplication\bin\Debug\net8.0-windows\ToDoApplication.runtimeconfig.json
+D:\Coding-Afnanirshad\CSHARP\ToDoApplication\bin\Debug\net8.0-windows\ToDoApplication.dll
+D:\Coding-Afnanirshad\CSHARP\ToDoApplication\bin\Debug\net8.0-windows\ToDoApplication.pdb
+D:\Coding-Afnanirshad\CSHARP\ToDoApplication\obj\Debug\net8.0-windows\ToDoApplication.GeneratedMSBuildEditorConfig.editorconfig
+D:\Coding-Afnanirshad\CSHARP\ToDoApplication\obj\Debug\net8.0-windows\ToDoApplication.AssemblyInfoInputs.cache
+D:\Coding-Afnanirshad\CSHARP\ToDoApplication\obj\Debug\net8.0-windows\ToDoApplication.AssemblyInfo.cs
+D:\Coding-Afnanirshad\CSHARP\ToDoApplication\obj\Debug\net8.0-windows\ToDoApplication.csproj.CoreCompileInputs.cache
+D:\Coding-Afnanirshad\CSHARP\ToDoApplication\obj\Debug\net8.0-windows\ToDoApplication.sourcelink.json
+D:\Coding-Afnanirshad\CSHARP\ToDoApplication\obj\Debug\net8.0-windows\ToDoApplication.dll
+D:\Coding-Afnanirshad\CSHARP\ToDoApplication\obj\Debug\net8.0-windows\refint\ToDoApplication.dll
+D:\Coding-Afnanirshad\CSHARP\ToDoApplication\obj\Debug\net8.0-windows\ToDoApplication.pdb
+D:\Coding-Afnanirshad\CSHARP\ToDoApplication\obj\Debug\net8.0-windows\ToDoApplication.genruntimeconfig.cache
+D:\Coding-Afnanirshad\CSHARP\ToDoApplication\obj\Debug\net8.0-windows\ref\ToDoApplication.dll
