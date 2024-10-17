@@ -8,42 +8,60 @@ ApplicationConfiguration.Initialize();
 
 Form form = new()
 {
-    Text = "To-Do App",
-    Width = 350,
-    Height = 250,
-    BackColor = Color.DarkOrange,
+    Text = "Your To-Do Tasks",
+    Width = 400, // 350
+    Height = 540, // 250
+    ForeColor = Color.White,
+    BackColor = Color.FromArgb(85, 102, 119),
 };
 
 //* creating controls
 
 TextBox textTask = new()
 {
-    Width = 200,
+    Width = 225,
+    Height = 32,
     Location = new Point(12, 12),
+    ForeColor = Color.White,
+    BackColor = Color.FromArgb(88, 50, 204),
+    BorderStyle = BorderStyle.None,
+    PlaceholderText = "Type here...",
+    TextAlign = HorizontalAlignment.Center,
+};
+
+ListBox listBoxTasks = new()
+{
+    Width = 225,
+    Height = 400,
+    Location = new Point(12, 50),
+    ForeColor = Color.White,
+    BackColor = Color.FromArgb(132, 92, 254),
+    ItemHeight = 20,
+    // Items.Padding = new Padding(10, 0, 10, 0),
 };
 
 Button btnAddTask = new()
 {
     AutoSize = true,
     Text = "Add Task",
-    Location = new Point(220, 10),
+    Location = new Point(260, 10),
     UseVisualStyleBackColor = true,
+    ForeColor = Color.White,
+    BackColor = Color.FromArgb(216, 0, 50),
+    Padding = new Padding(5, 1, 5, 1),
 };
 
 Button btnRemoveTask = new()
 {
     AutoSize = true,
-    Text = "Remove Task",
-    Location = new Point(220, 40),
+    Text = "Delete",
+    Location = new Point(265, 60),
     UseVisualStyleBackColor = true,
+    ForeColor = Color.White,
+    BackColor = Color.FromArgb(216, 0, 50),
+    Padding = new Padding(5, 1, 5, 1),
 };
 
-ListBox listBoxTasks = new()
-{
-    Width = 200,
-    Height = 150,
-    Location = new Point(12, 40),
-};
 
 //!     A C T I O N
 
