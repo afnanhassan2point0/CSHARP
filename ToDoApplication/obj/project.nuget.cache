@@ -1,8 +1,99 @@
 {
   "version": 2,
-  "dgSpecHash": "vWaox/mVWTAbJZCD4NKViC8wDc7yP2Zt/dLm0Ts3wcPCyi3Zlyal2Yvj9KKDmU2p7PLiHXmNCtAvd2w3S1opZQ==",
+  "dgSpecHash": "1ebEJCuwpJZQ0/u3vJlRYwGp4UO10n+DDXh5CcWAHhrAt4c46ZKmZsa8xwNbMCrXss7D3gZkv4Mx3pj2LRwNQA==",
   "success": true,
   "projectFilePath": "D:\\Coding-Afnanirshad\\CSHARP\\ToDoApplication\\ToDoApplication.csproj",
-  "expectedPackageFiles": [],
-  "logs": []
+  "expectedPackageFiles": [
+    "C:\\Users\\afnan\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
+    "C:\\Users\\afnan\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\afnan\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
+    "C:\\Users\\afnan\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
+    "C:\\Users\\afnan\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\afnan\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\afnan\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\afnan\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.118\\stub.system.data.sqlite.core.netstandard.1.0.118.nupkg.sha512",
+    "C:\\Users\\afnan\\.nuget\\packages\\system.codedom\\8.0.0\\system.codedom.8.0.0.nupkg.sha512",
+    "C:\\Users\\afnan\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
+    "C:\\Users\\afnan\\.nuget\\packages\\system.configuration.configurationmanager\\8.0.0\\system.configuration.configurationmanager.8.0.0.nupkg.sha512",
+    "C:\\Users\\afnan\\.nuget\\packages\\system.data.sqlclient\\4.8.6\\system.data.sqlclient.4.8.6.nupkg.sha512",
+    "C:\\Users\\afnan\\.nuget\\packages\\system.data.sqlite\\1.0.118\\system.data.sqlite.1.0.118.nupkg.sha512",
+    "C:\\Users\\afnan\\.nuget\\packages\\system.data.sqlite.core\\1.0.118\\system.data.sqlite.core.1.0.118.nupkg.sha512",
+    "C:\\Users\\afnan\\.nuget\\packages\\system.data.sqlite.ef6\\1.0.118\\system.data.sqlite.ef6.1.0.118.nupkg.sha512",
+    "C:\\Users\\afnan\\.nuget\\packages\\system.diagnostics.eventlog\\8.0.0\\system.diagnostics.eventlog.8.0.0.nupkg.sha512",
+    "C:\\Users\\afnan\\.nuget\\packages\\system.security.accesscontrol\\6.0.1\\system.security.accesscontrol.6.0.1.nupkg.sha512",
+    "C:\\Users\\afnan\\.nuget\\packages\\system.security.cryptography.protecteddata\\8.0.0\\system.security.cryptography.protecteddata.8.0.0.nupkg.sha512",
+    "C:\\Users\\afnan\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "System.Data.SqlClient 4.8.6 depends on Microsoft.Win32.Registry (>= 4.7.0) but Microsoft.Win32.Registry 4.7.0 was not found. An approximate best match of Microsoft.Win32.Registry 5.0.0 was resolved.",
+      "libraryId": "Microsoft.Win32.Registry",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "EntityFramework 6.4.4 depends on System.CodeDom (>= 4.7.0) but System.CodeDom 4.7.0 was not found. An approximate best match of System.CodeDom 8.0.0 was resolved.",
+      "libraryId": "System.CodeDom",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "EntityFramework 6.4.4 depends on System.ComponentModel.Annotations (>= 4.7.0) but System.ComponentModel.Annotations 4.7.0 was not found. An approximate best match of System.ComponentModel.Annotations 5.0.0 was resolved.",
+      "libraryId": "System.ComponentModel.Annotations",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "EntityFramework 6.4.4 depends on System.Configuration.ConfigurationManager (>= 4.7.0) but System.Configuration.ConfigurationManager 4.7.0 was not found. An approximate best match of System.Configuration.ConfigurationManager 8.0.0 was resolved.",
+      "libraryId": "System.Configuration.ConfigurationManager",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "EntityFramework 6.4.4 depends on System.Data.SqlClient (>= 4.8.1) but System.Data.SqlClient 4.8.1 was not found. An approximate best match of System.Data.SqlClient 4.8.6 was resolved.",
+      "libraryId": "System.Data.SqlClient",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Microsoft.Win32.Registry 5.0.0 depends on System.Security.AccessControl (>= 5.0.0) but System.Security.AccessControl 5.0.0 was not found. An approximate best match of System.Security.AccessControl 6.0.1 was resolved.",
+      "libraryId": "System.Security.AccessControl",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "System.Data.SqlClient 4.8.6 depends on System.Security.Principal.Windows (>= 4.7.0) but System.Security.Principal.Windows 4.7.0 was not found. An approximate best match of System.Security.Principal.Windows 5.0.0 was resolved.",
+      "libraryId": "System.Security.Principal.Windows",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    }
+  ]
 }

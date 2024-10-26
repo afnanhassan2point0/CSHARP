@@ -1,5 +1,7 @@
 
 //* Application Initialization
+using System.Data.SQLite;
+
 ApplicationConfiguration.Initialize();
 
 //!     User - Interface
@@ -63,6 +65,14 @@ Button btnRemoveTask = new()
 };
 
 
+//!     Backend Database Code
+//* creating Database
+SQLiteConnection liteConnection = new("Data Source = todoList.db");
+liteConnection.Open();
+SQLiteCommand liteCommand = liteConnection.CreateCommand();
+liteCommand.CommandText = "CREATE TABLE IF NOT EXISTS UserTasks(TaskText text);";
+liteCommand.ExecuteNonQuery();
+
 //!     A C T I O N
 
 //* Adding a Task
@@ -72,6 +82,11 @@ btnAddTask.Click += (s, e) =>
     if (!string.IsNullOrEmpty(textTask.Text))
     {
         listBoxTasks.Items.Add(textTask.Text);
+        liteCommand.CommandText = $"INSERT INTO UserTasks(TaskText) VALUES ({textTask.Text})";
+        if (liteCommand.ExecuteNonQuery() != 1)
+        {
+            MessageBox.Show("Error: encountered an error while adding this task to database", "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
         textTask.Clear();
     }
     else
