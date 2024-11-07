@@ -1,123 +1,131 @@
 
-//* Application Initialization
 using System.Data.SQLite;
 
+// SQLite database file path
+String dbPath = "Data Source=todo.db";
+
+// Create or connect to the SQLite database
+using (var connection = new SQLiteConnection(dbPath))
+{
+    connection.Open();
+
+    // Create a table if it doesn’t already exist
+    String createTableQuery = @"CREATE TABLE IF NOT EXISTS Tasks(
+                                Id INTEGER PRIMARY KEY AUTOINCREMENT,
+                                Task TEXT NOT NULL
+                            );";
+    using var command = new SQLiteCommand(createTableQuery, connection);
+    command.ExecuteNonQuery();
+}
+
+// Initialize the WinForms application
 ApplicationConfiguration.Initialize();
 
-//!     User - Interface
+Form form = new();
+form.Text = "To - Do App";
+form.Width = 330;
+form.Height = 250;
 
-//* creating form
-
-Form form = new()
+// Create controls
+TextBox txtTask = new()
 {
-    Text = "Your To-Do Tasks",
-    Width = 400, // 350
-    Height = 540, // 250
-    ForeColor = Color.White,
-    BackColor = Color.FromArgb(85, 102, 119),
+    Location = new System.Drawing.Point(12, 12),
+    Width = 200
 };
-
-//* creating controls
-
-TextBox textTask = new()
-{
-    Width = 225,
-    Height = 32,
-    Location = new Point(12, 12),
-    ForeColor = Color.White,
-    BackColor = Color.FromArgb(88, 50, 204),
-    BorderStyle = BorderStyle.None,
-    PlaceholderText = "Type here...",
-    TextAlign = HorizontalAlignment.Center,
-};
-
-ListBox listBoxTasks = new()
-{
-    Width = 225,
-    Height = 400,
-    Location = new Point(12, 50),
-    ForeColor = Color.White,
-    BackColor = Color.FromArgb(132, 92, 254),
-    ItemHeight = 20,
-    // Items.Padding = new Padding(10, 0, 10, 0),
-};
-
 Button btnAddTask = new()
 {
-    AutoSize = true,
     Text = "Add Task",
-    Location = new Point(260, 10),
-    UseVisualStyleBackColor = true,
-    ForeColor = Color.White,
-    BackColor = Color.FromArgb(216, 0, 50),
-    Padding = new Padding(5, 1, 5, 1),
+    Location = new System.Drawing.Point(220, 10)
 };
-
 Button btnRemoveTask = new()
 {
-    AutoSize = true,
-    Text = "Delete",
-    Location = new Point(265, 60),
-    UseVisualStyleBackColor = true,
-    ForeColor = Color.White,
-    BackColor = Color.FromArgb(216, 0, 50),
-    Padding = new Padding(5, 1, 5, 1),
+    Text = "Remove Task",
+    Location = new System.Drawing.Point(220, 40)
+};
+ListBox listBoxTasks = new()
+{
+    Location = new System.Drawing.Point(12, 40),
+    Width = 200,
+    Height = 150
 };
 
-
-//!     Backend Database Code
-//* creating Database
-SQLiteConnection liteConnection = new("Data Source = todoList.db");
-liteConnection.Open();
-SQLiteCommand liteCommand = liteConnection.CreateCommand();
-liteCommand.CommandText = "CREATE TABLE IF NOT EXISTS UserTasks(TaskText text);";
-liteCommand.ExecuteNonQuery();
-
-//!     A C T I O N
-
-//* Adding a Task
-
-btnAddTask.Click += (s, e) =>
+// Event to add a task
+btnAddTask.Click += (sender, e) =>
 {
-    if (!string.IsNullOrEmpty(textTask.Text))
+    if (!string.IsNullOrWhiteSpace(txtTask.Text))
     {
-        listBoxTasks.Items.Add(textTask.Text);
-        liteCommand.CommandText = $"INSERT INTO UserTasks(TaskText) VALUES ({textTask.Text})";
-        if (liteCommand.ExecuteNonQuery() != 1)
+        // Insert task into SQLite database
+        using (var connection = new SQLiteConnection(dbPath))
         {
-            MessageBox.Show("Error: encountered an error while adding this task to database", "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            connection.Open();
+            String insertQuery = "INSERT INTO Tasks(Task) VALUES(@task)";
+            using (var command = new SQLiteCommand(insertQuery, connection))
+            {
+                command.Parameters.AddWithValue("@task", txtTask.Text);
+                command.ExecuteNonQuery();
+            }
         }
-        textTask.Clear();
+
+        // Add task to the ListBox
+        listBoxTasks.Items.Add(txtTask.Text);
+        txtTask.Clear();
     }
     else
     {
-        MessageBox.Show("Please enter a task before adding.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        MessageBox.Show("Please enter a task before adding.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
     }
 };
 
-//* Removing a Task
-
-btnRemoveTask.Click += (s, e) =>
+// Event to remove selected task
+btnRemoveTask.Click += (sender, e) =>
 {
     if (listBoxTasks.SelectedIndex >= 0)
     {
+        String selectedTask = listBoxTasks.SelectedItem.ToString();
+
+        // Remove the task from the database
+        using (var connection = new SQLiteConnection(dbPath))
+        {
+            connection.Open();
+            String deleteQuery = "DELETE FROM Tasks WHERE Task = @task";
+            using var command = new SQLiteCommand(deleteQuery, connection);
+            command.Parameters.AddWithValue("@task", selectedTask);
+            command.ExecuteNonQuery();
+        }
+
+        // Remove the task from the ListBox
         listBoxTasks.Items.RemoveAt(listBoxTasks.SelectedIndex);
     }
     else
     {
-        MessageBox.Show("Please select a task to be removed.", "Selection Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        MessageBox.Show("Please select a task to remove.", "Selection Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
     }
 };
 
+// Function to load tasks from the database on app startup
+void LoadTasks()
+{
+    using var connection = new SQLiteConnection(dbPath);
+    connection.Open();
+    String selectQuery = "SELECT Task FROM Tasks";
+    using var command = new SQLiteCommand(selectQuery, connection);
+    using var reader = command.ExecuteReader();
+    while (reader.Read())
+    {
+        listBoxTasks.Items.Add(reader["Task"].ToString());
+    }
+}
 
-//!     C O N T R O L L S
+// Load tasks from the database when the app starts
+LoadTasks();
 
-form.Controls.Add(textTask);
+// Add controls to the form
+form.Controls.Add(txtTask);
 form.Controls.Add(btnAddTask);
 form.Controls.Add(btnRemoveTask);
 form.Controls.Add(listBoxTasks);
 
-
-//* Application Running
+// Run the application
 Application.Run(form);
+
 
